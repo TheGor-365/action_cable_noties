@@ -1,5 +1,12 @@
 <h1 class="mb-5">Posts</h1>
 
+<button
+  data-controller="notification"
+  data-action="notification#requestPermission"
+>
+  Request notification permission
+</button>
+
 <% @posts.each do |post| %>
   <%= render post %>
   <p><%= link_to "Show this post", post, class: "btn btn-sm btn-outline-dark mt-3" %></p>
